@@ -4,7 +4,7 @@ Here you will find a mock website for a fictional band called 'Thirteen Knights'
 
 I used HTML, CSS, Bootstrap, Python & Django to code this website.
 
-It has a navagation bar that will allow you to vie wthe following pages:
+It has a navagation bar that will allow you to view the following pages:
 * Home
 * Products Page
 * About
