@@ -1,0 +1,37 @@
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+a {
+    color: white;
+    
+}
+
+p {
+    color: white;
+}
+
+footer {
+    text-align: center;
+}
+
+a {
+    color: white;
+    float: inline-start;
+}
+
+.logout_link {
+    float: inline-end;
+}

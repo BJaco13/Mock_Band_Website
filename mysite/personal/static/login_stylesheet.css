@@ -1,0 +1,23 @@
+body {
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #545454;
+}
+
+form {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+    padding: 3%;
+}
+
+button {
+    border: transparent; 
+    background-color: transparent; 
+    color: #FAF33e;
+    text-decoration: underline;
+}

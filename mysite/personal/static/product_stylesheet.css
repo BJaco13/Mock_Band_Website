@@ -1,0 +1,52 @@
+.containers {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 30%;
+    gap: 5%;
+}
+
+.single_product {
+    border: 1px solid #565554;
+    padding: 7px;
+    text-align: center;
+}
+
+img {
+    width: 225px; 
+    height: 200px;
+}
+
+img:hover {
+    opacity: 0.5;
+  }
+
+body {
+    background-color: #F5F9E9;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.row {
+    padding-bottom: 30px;
+}
+
+label {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.form_btn {
+    padding-top: 20px;
+}
+
+h3 {
+    color: white;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+}
