@@ -1,0 +1,29 @@
+{% extends "shows1.html" %}
+
+{% block content %}
+
+{% for show in shows_list %}
+
+<div style = "padding: 1%; color: white; text-align: center; border: 1px solid white; margin-top: 2%; margin-bottom: 2%;">
+
+    <div class = "row" style = "padding-top: 1%; padding-bottom: 1%;">
+
+        <div class = "col-md-4">
+    <h5>{{ show.date|date:"Y-m-d" }}</h5>
+        </div>
+
+        <div class = "col-md-4">
+    <h5>{{ show.location }}</h5>
+        </div>
+
+        <div class = "col-md-4">
+    <h5>{{ show.time }}</h5>
+        </div>
+
+    </div>
+
+</div>
+
+
+{% endfor %}
+{% endblock %}

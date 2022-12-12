@@ -1,0 +1,61 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+
+    <header>
+
+        <link rel="stylesheet" href="{% static 'profile_stylesheet.css' %}" type="text/css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid" style = "justify-content: center;">
+                        
+                    <div id = "main-nav" class="navbar-header header_style" >
+                        
+                        <a style = "color: white;" class="navbar-brand navbar-colour" href="{% url 'index' %}">Home</a>
+                        <a style = "color: white;" class="navbar-brand" href="{% url 'about_me' %}">About</a>
+                        <a style = "color: white;" class="navbar-brand" href="{% url 'products'%}">Merch</a>
+                        <a style = "color: white;" class="navbar-brand" href="{% url 'shows'%}">Shows</a>
+                        <a style = "color: white;" class="navbar-brand" href="{% url 'profile'%}">My Profile</a>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+    </header>
+
+<head >
+    
+    <h1 style = "color: white; text-align: center; padding: 3%;">My Profile</h1>
+
+</head>
+
+<body style = " background-color: #545454;">
+
+    <div style="text-align: center;">
+
+        <form style="align-self:flex-end;" action = "{% url 'logout' %}" method = "post">
+            {% csrf_token %}
+            <button style = "font-size: 20px; color: white;" id = "logout_button" class="navbar-brand" type = "submit" >Logout User</button>
+        </form>
+
+        <a style = "font-size: 20px; color: white;" class="navbar-brand" href="{% url 'login'%}">Login User</a> <br>
+        <a style = "font-size: 20px; color: white;" class="navbar-brand" href="{% url 'register_user'%}">Register User</a>
+
+    </div>
+
+</body>
+
+<footer style="padding-top: 28%;">
+   
+    <div style = "text-align: center; ">
+        <a href = "#" style = "padding-right: 1%;"><img style="height: 25px; width: 25px;" src = "{% static 'Social_Icons/spotify-icon.png' %}"></a>
+        <a href = "#" style = "padding-right: 1%;"><img style="height: 25px; width: 25px;" class = "social_icons" src = "{% static 'Social_Icons/youtube-icon.png' %}"></a>
+        <a href = "#"><img style="height: 25px; width: 25px;" class = "social_icons" src = "{% static 'Social_Icons/ig-icon.png' %}"></a>
+    </div>
+
+</footer>
