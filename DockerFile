@@ -1,0 +1,8 @@
+FROM pypy:latest
+
+WORKDIR /MOCK_BAND_WEBSITE
+COPY . /MOCK_BAND_WEBSITE
+CMD /mysite/_init_.py
+
+RUN pip install -r requirements.txt
+
